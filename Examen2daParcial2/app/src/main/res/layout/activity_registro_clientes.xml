@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llMain"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO CLIENTES"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/etIDCliente"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:hint="ID:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/etNombreCliente"
+
+            android:textSize="20sp"
+            android:hint="Nombre del cliente:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/etRFC"
+
+            android:textSize="20sp"
+            android:hint="RFC:"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_below="@id/llMain"
+        android:id="@+id/llGrupo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:id="@+id/btnAlta"
+            android:text="Dar de Alta"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btnBaja"
+            android:text="Dar de Baja"
+            android:padding="0dp"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:id="@+id/btnModificar"
+            android:text="Modificar"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_below="@id/llGrupo2"
+        android:id="@+id/llGrupo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btnBusquedaNombre"
+            android:text="Buscar por Nombre"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/llGrupo3"
+        android:id="@+id/llGrupo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btnLista"
+            android:text="Ver lista completa"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calorias">
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOSTON"
+        android:textStyle="bold"
+        android:textColor="#198754"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_below="@+id/index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNombre"
+        android:text="{Nombre}"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEdad"
+        android:layout_below="@id/tvNombre"
+        android:layout_marginTop="10dp"
+        android:text="{Edad}"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSexo"
+        android:layout_below="@id/tvEdad"
+        android:layout_marginTop="10dp"
+        android:text="{Sexo}"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_below="@id/tvSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_marginEnd="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btnCalcular"
+            android:layout_height="wrap_content"
+            android:text="Tiempo Requerido"/>
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btnSalir"
+            android:layout_height="wrap_content"
+            android:text="Salir"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llButtons"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvResultado"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+</RelativeLayout>

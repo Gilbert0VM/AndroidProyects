@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784415280574",
+    "project_id": "pruebamaquitiapp",
+    "storage_bucket": "pruebamaquitiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784415280574:android:621af64a457038e3937def",
+        "android_client_info": {
+          "package_name": "com.example.prueba_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPxU8C4nSCdouTxMPXyhBBlrQ0XD1lsZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
